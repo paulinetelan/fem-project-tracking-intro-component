@@ -42,14 +42,32 @@ body {
   right: 0;
 }
 
+.greyish-blue {
+  color: var(--dark-grayish-blue);
+}
+
 .nav li {
   display: inline;
   margin: 0 25px;
   vertical-align: middle
 }
 
+.nav li a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+a.navlink {
+  color: var(--very-dark-blue);
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
 
 .nav-divider::before {
-  content: "•";
+  content: "•"; /* Adding content here so we can change the color */
   color: var(--dark-grayish-blue);
 }
