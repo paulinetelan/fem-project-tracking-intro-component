@@ -82,6 +82,7 @@ p {
 }
 
 .top-row {
+  background-color: red;
   grid-column-start: 1;
   grid-column-end: 3;
   position: relative;
@@ -130,6 +131,10 @@ a.navlink {
 
 /* Left column */
 
+.left-column {
+  width: 100%;
+}
+
 .top-header {
   margin-top: 15%;
   margin-bottom: 7%;
@@ -148,4 +153,10 @@ a.navlink {
 
 .sched-demo a:hover {
   opacity: 0.5;
+}
+
+/* Right image column */
+.right-image {
+  position: relative;
+  right: -30%;
 }
