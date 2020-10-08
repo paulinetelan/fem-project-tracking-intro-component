@@ -3,7 +3,7 @@
   --reddish: #BC4747;
   --bright-pink: #FF5E5E;
   --dark-grayish-blue: hsl(230, 11%, 40%);
-  --grayish-blue: #EDF2F6;
+  --grayish-blue: hsl(231, 7%, 65%);
   --light-grayish-blue: hsl(207, 33%, 95%);
 }
 
@@ -17,6 +17,17 @@ body {
   display: flex;
   justify-content: center;
   padding: 5% 10%;
+  position: relative;
+}
+
+.rectangle {
+  background-color: var(--light-grayish-blue);
+  border-bottom-left-radius: 50px;
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .grid {
@@ -43,7 +54,7 @@ body {
 }
 
 .greyish-blue {
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
 }
 
 .nav li {
@@ -69,5 +80,4 @@ a.navlink {
 
 .nav-divider::before {
   content: "•"; /* Adding content here so we can change the color */
-  color: var(--dark-grayish-blue);
 }
